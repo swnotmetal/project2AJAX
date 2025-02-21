@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visa Information</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Travel Visa Information</h1>
+    <form id="country-form">
+      <div class="form-group">
+          <label for="passport">Enter Your Passport Country:</label>
+          <input type="text" id="passport" name="passport" placeholder="e.g., Finland" required>
+      </div>
+      <div class="form-group">
+          <label for="country">Enter Destination Country:</label>
+          <input type="text" id="country" name="country" placeholder="e.g., China" required>
+      </div>
+      <button type="submit">Get Info</button>
+  </form>
+
+    <div id="output" class="output" style="display: none;">
+      <h2>Visa Information:</h2>
+      <p><b>Passport:</b> <span id="passport_of"></span></p>
+      <p><b>Destination:</b> <span id="destination"></span></p>
+      <p><b>Visa Requirement:</b> <span id="visa"></span></p>
+      <p><b>Allowed Stay:</b> <span id="stay_of"></span></p>
+      <p><b>Capital:</b> <span id="capital"></span></p>
+      <p><b>Currency:</b> <span id="currency"></span></p>
+      <p><b>Passport Validity:</b> <span id="pass_valid"></span></p>
+      <p><b>Phone Code:</b> <span id="phone_code"></span></p>
+      <p><b>Timezone:</b> <span id="timezone"></span></p>
+      <p><b>Exceptions:</b> <span id="except_text"></span></p>
+      <p><b>Additional Information Link:</b> <a id="link" href="#" target="_blank">Click here</a></p>
+    </div>
+
+ 
+    </div>
+    <div id="error" class="error"></div>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
