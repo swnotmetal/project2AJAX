@@ -1,6 +1,6 @@
 let errorElement;
 //import { API_KEY } from "./config.js"; remove for delopyment
-
+let x_rapidapi_key;
 // For development
 if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     import('./config.js')
@@ -42,7 +42,7 @@ document.getElementById('country-form').addEventListener('submit', async (event)
             const url = 'https://visa-requirement.p.rapidapi.com/';
             
             xhr.open('POST', url, true);
-            xhr.setRequestHeader('x-rapidapi-key', `${x_rapidpai_key}`);
+            xhr.setRequestHeader('x-rapidapi-key', `${x_rapidapi_key}`);
             xhr.setRequestHeader('x-rapidapi-host', 'visa-requirement.p.rapidapi.com');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
