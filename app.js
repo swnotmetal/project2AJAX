@@ -1,7 +1,17 @@
 let errorElement;
 //import { API_KEY } from "./config.js"; remove for delopyment
 
-const x_rapidpai_key = process.env.NETLIFY_API_KEY
+// For development
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    import('./config.js')
+        .then(config => {
+            x_rapidapi_key = config.API_KEY;
+        })
+        .catch(err => console.error('Error loading config:', err));
+} else {
+    // For production - Netlify will replace this during build
+    x_rapidapi_key = 'NETLIFY_API_KEY_PLACEHOLDER';
+}
 
 // Initialize error element when document loads
 document.addEventListener('DOMContentLoaded', () => {
