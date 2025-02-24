@@ -61,6 +61,13 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.brief {
+    margin-bottom: 2.5rem;
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 /* Form */
 form {
     display: grid;
@@ -145,7 +152,7 @@ button:hover {
     transition: transform 0.2s ease;
 }
 
-/* Modern connecting lines */
+/* Connecting lines */
 .output p:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -204,6 +211,52 @@ button:hover {
     transform: translateX(0);
 }
 
+.footnote {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+.copyright {
+    font-weight: 500;
+}
+
+.author a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.author a:hover {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+.disclaimer {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-align: center;
+    max-width: 600px;
+    margin: 0.5rem auto;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .footnote {
+        margin-top: 2rem;
+        padding-top: 1rem;
+    }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {

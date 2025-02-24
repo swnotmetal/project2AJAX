@@ -10,6 +10,9 @@
 <body>
   <div class="container">
     <h1>Travel Visa Information</h1>
+    <div class="brief" id="brief">
+      <p>Planning your next adventure? Get instant visa requirement information for any country. Simply enter your passport country and destination to discover everything you need to know - from visa requirements and stay duration to local details like currency and timezone. Your hassle-free travel planning starts here!</p>
+    </div>
     <form id="country-form">
       <div class="form-group">
           <label for="passport">Enter Your Passport Country:</label>
@@ -36,10 +39,17 @@
       <p><b>Exceptions:</b> <span id="except_text"></span></p>
       <p><b>Additional Information Link:</b> <a id="link" href="#" target="_blank">Click here</a></p>
     </div>
-
- 
-    </div>
+    
     <div id="error" class="error"></div>
+    <footer class="footnote">
+      <div class="footer-content">
+        <p class="copyright">© 2025 Travel Visa Information</p>
+        <p class="author">
+          Developed by <a href="https://github.com/swnotmetal" target="_blank" rel="noopener noreferrer">Shuang Wu</a>
+        </p>
+        <p class="disclaimer">This tool provides general visa information only. For the most accurate and up-to-date requirements, please consult the official embassy or consulate.</p>
+      </div>
+    </footer>
   </div>
 
   <script src="app.js" type="module"></script>
