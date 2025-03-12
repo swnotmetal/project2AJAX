@@ -6,6 +6,9 @@ A web application built for the Dynamic Web Applications with Javascript (TO00BL
 
 This application allows users to check visa requirements between countries. Users can input their passport country and destination country to get detailed visa information including stay duration, visa requirements, and other relevant travel information.
 
+## Live link
+https://visacheckersw.netlify.app/ 
+
 ## Features
 
 - Check visa requirements between any two countries
